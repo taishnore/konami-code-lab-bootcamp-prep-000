@@ -13,13 +13,12 @@ const codes = [
 
 let index = 0
 
-function init() {
-  document.addEventListener("keydown", function(e) {
+document.addEventListener("keydown", function(e) {
     let key = e.key;
     if (key = codes[index]) {
         index++;
         if (index === codes.length) {
-            alert("Yeah bitch");
+            alert("Yeah");
             
             index = 0;
         }
